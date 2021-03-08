@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+
+body, a, div, html{font-family: 'Noto Sans KR', sans-serif;}
+
+*{margin:0; padding: 0; box-sizing: border-box}
+.slider-container{position: relative; left: 0; top: 0; max-width: 1000px; margin: auto}
+.slider{display: none;}
+.numbertext{position: absolute; }
+.prev, .next{position: absolute; top: 50%; width: auto; font-size: 25px; color: rgb(91, 246, 194); cursor: pointer;  padding: 1rem .7rem; border-radius: 5px; user-select: none; transition: background-color .4s} 
+.next{right: 0}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+.caption{position: absolute; width: 100%; text-align: center; font-weight: bold; bottom: 10px}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+.fade{-webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s; animation: fade 1.5s; }
+
+
+@-webkit-keyframes fade {
+  0% {opacity: .4}
+  100% {opacity: 1}
+}
+
+@keyframes fade{
+    0%{opacity: .4}
+    100%{opacity: 1;}
+}
+
+img{height: 660px;}
+
+@media all and (max-width: 1000px){
+    img{height: auto}
+}

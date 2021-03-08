@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Slide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="slider-container">
+        <div class="slider fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="img/slide_1.jpg" alt="slide" width="100%">
+            <div class="caption">고양이1</div>
+        </div>
+        <div class="slider fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="img/slide_2.jpg" alt="slide" width="100%">
+            <div class="caption">고양이2</div>
+        </div>
+        <div class="slider fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="img/slide_3.jpg" alt="slide" width="100%">
+            <div class="caption">고양이3</div>
+        </div>
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+    </div>
+    <div style="text-align: center;">
+        <span class="dot" onclick="handleDot(1)"></span>
+        <span class="dot" onclick="handleDot(2)"></span>
+        <span class="dot" onclick="handleDot(3)"></span>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
